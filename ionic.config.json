@@ -1,0 +1,7 @@
+{
+  "name": "mili-player",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
