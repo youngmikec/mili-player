@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "image": "assets/icon/favicon.png",
+      "musicUrl": "assets/music/Chike-Ft-Simi-Running-To-You-(TrendyBeatz.com).mp3",
+      "musicName": "Chike-Ft-Simi-Running-To-You-(TrendyBeatz.com).mp3",
+      "artist": "Chike-Ft-Simi",
+      "genre": "Afro-beats"
+    },
+    {
+      "id": 2,
+      "image": "assets/icon/favicon.png",
+      "musicUrl": "assets/music/02-Teni-For-You-ft-Davido-1-(JustNaija.com).mp3",
+      "musicName": "02-Teni-For-You-ft-Davido-1-(JustNaija.com).mp3",
+      "artist": "Teni",
+      "genre": "Afro-beats"
+    },
+    {
+      "id": 3,
+      "image": "assets/icon/favicon.png",
+      "musicUrl": "assets/music/05-Teni-Hustle-(JustNaija.com).mp3",
+      "musicName": "Teni-Hustle-(JustNaija.com)",
+      "artist": "Teni",
+      "genre": "Afro-beats"
+    },
+    {
+        "id": 4,
+        "image": "assets/icon/favicon.png",
+        "musicUrl": "assets/music/Buju-Outside.mp3",
+        "musicName": "Outside.mp3",
+        "artist": "Buju",
+        "genre": "Afro-beats"
+    },
+    {
+        "id": 5,
+        "image": "assets/icon/favicon.png",
+        "musicUrl": "assets/music/Omah-Lay-Understand.mp3",
+        "musicName": "Understand",
+        "artist": "Omah-Lay",
+        "genre": "Afro-beats"
+    }
+]

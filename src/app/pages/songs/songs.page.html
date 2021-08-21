@@ -1,0 +1,12 @@
+<h4 style="text-align: center;">Songs</h4>
+
+<ion-content>
+  <ion-item *ngFor="let music of musicRecords" (click)="navigateToMusicPage()">
+    <ion-thumbnail slot="start" >
+      <img src="{{music?.image}}">
+    </ion-thumbnail>
+    <ion-label>{{music?.musicName}}</ion-label>
+    <!-- <p><small>{{music?.artist}}</small></p> -->
+    <ion-icon  name="ellipsis-vertical-outline"></ion-icon>
+  </ion-item>
+</ion-content>

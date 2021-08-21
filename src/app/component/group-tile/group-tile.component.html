@@ -1,0 +1,60 @@
+<!-- <ion-grid *ngFor="let item of record.musics"> -->
+  <!-- <ion-grid>
+    <ion-row *ngFor="let item of record.musics">
+      <ion-col size="6" class="ion-align-self-start">
+        <div class="grid-tile">
+          <img src="item?.image" alt="music-image{{item?.id}}">
+          <p>Artist: {{item?.artist}}</p>
+          <p>Genre: {{item?.genre}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+  <!-- <div id="grid-parent" *ngFor="let item of record.musics">
+    <br>
+    
+    <div class="grid-tile">
+      <img src="item?.image" alt="music-image{{item?.id}}">
+      <p>Artist: {{item?.artist}}</p>
+      <p>Genre: {{item?.genre}}</p>
+    </div>
+  </div> -->
+  
+  <!-- <ion-label>{{record?.title}}</ion-label>
+  <br>
+  <ion-grid>
+  <ion-row>
+    <ion-col *ngFor="let item of record.musics">
+      <div class="grid-tile">
+        <img src="item?.image" alt="music-image{{item?.id}}">
+        <p>Artist: {{item?.artist}}</p>
+        <p>Genre: {{item?.genre}}</p>
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        2 of 3
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        3 of 3
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+
+
+  <ion-item href="#" class="ion-activated">
+    <ion-label>{{record?.title}}</ion-label>
+  </ion-item>
+  <br>
+  <ion-card *ngFor="let item of record.musics" (click)="navigateToMusicPage()">
+    <img src="{{item?.image}}" />
+    <ion-card-content>
+      <p><strong>Artist:</strong> {{item?.artist}}</p>
+      <p><strong>Genre:</strong> {{item?.genre}}</p>
+    </ion-card-content>
+  </ion-card>
+
+  

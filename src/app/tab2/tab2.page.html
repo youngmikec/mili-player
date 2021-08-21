@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
+    <ion-title >
+      Music
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,12 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
+  <ion-card *ngFor="let group of groupMusicArray; let i = index">
+    <app-group-tile [record]="group"></app-group-tile>
+  </ion-card>
+  
+  <!-- <app-group-tile></app-group-tile>
+  <app-group-tile></app-group-tile> -->
+
 </ion-content>

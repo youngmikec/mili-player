@@ -1,0 +1,49 @@
+ion-content{
+    --ion-background-color: #222428;
+    --ion-background-color-rgb: 18,18,18;
+
+    --ion-text-color: #ffffff;
+    --ion-text-color-rgb: 255,255,255;
+}
+
+
+#music-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em 0px;
+}
+
+ion-card{
+    min-height: 50vh;
+    max-height: 50vh;
+    border-radius: 10px;
+    margin: 25px 20px;
+    --background: none;
+    background-image: url('/assets/icon/favicon.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input{
+    width: 100%;
+}
+
+ion-icon{
+    font-size: 30px;
+}
+
+.play{
+    font-size: 60px;
+    position: absolute;
+    top: -17px;
+    right: 8px;
+}
+
+.container{
+    margin: 50px 20px 0px 20px;
+}
+
+.mini-content{
+    margin: 10px 0px;
+}

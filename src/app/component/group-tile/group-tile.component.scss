@@ -1,0 +1,25 @@
+@mixin grid($col, $mgn) {
+    float: left;
+    margin-right: $mgn;
+    margin-bottom: $mgn;
+    --width: ((100% - (($col - 1) * $mgn)) / $col);
+    &:nth-child(#{$col}n){
+        margin-right: 0;
+    }
+}
+ion-card{
+    @include grid(3, .5%);
+    --background: #26282e;
+}
+#grid-parent{
+    display: block;
+    width: 100%;
+    // flex-direction: column;
+    // @include grid(3, 2%);
+
+}
+.grid-tile{
+    border: 1px solid white;
+    border-radius: 5px;
+    @include grid(3, 1%);
+}

@@ -7,11 +7,50 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-content (click)="navigateToSongs()">
+            <ion-icon name="file-tray"></ion-icon>
+            <p>Libray</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-icon name="file-tray"></ion-icon>
+            <p>Albums</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-icon name="file-tray"></ion-icon>
+            <p>Artist</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-icon name="file-tray"></ion-icon>
+            <p>Playlists</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-text>
+    <ion-label>{{status}}</ion-label>
+    <ion-label>{{fileUrl}}</ion-label>
+    <br>
+    <ion-label>Resolved: {{ resolvedPath }}</ion-label>
+    <br>
+    <ion-label *ngFor="let item of lists">isFile? {{item.isFile}}</ion-label>
+  </ion-text>
+  
 </ion-content>

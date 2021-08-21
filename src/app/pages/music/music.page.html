@@ -1,0 +1,57 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>music</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div style="text-align: center; margin: 10px 0px;">
+    <span (click)="navigateToDetailsPage()">Detail |</span>
+    <span> Music |</span>
+    <span> Lyrics</span>
+  </div>
+  <ion-card ></ion-card>
+  <div id="music-content" class="container">
+    <div style="flex: 1;">
+      <marquee behavior="" direction="left" style="text-align: center;">{{currentRecord?.musicName}}</marquee>
+      <p style="text-align: center;"><small>{{currentRecord?.artist}}</small></p>
+    </div>
+
+    <div class="mini-content" style="flex: 1; display: flex; flex-direction: row; text-align: center; margin-bottom: 20px;">
+     
+      <div style="flex: 1;">
+        <ion-icon name="file-tray-full-outline"></ion-icon>
+      </div>
+      <div style="flex: 1;">
+        <ion-icon *ngIf="currentRecord.isFavourite === false" name="heart-outline"></ion-icon>
+        <ion-icon *ngIf="currentRecord.isFavourite === true" name="heart"></ion-icon>
+      </div>
+      <div style="flex: 1;">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </div>
+      
+    </div>
+    <div class="mini-content">
+      <input type="range" name="music-progress" id="music-progress" min="0" max="100" step="2">
+    </div>
+
+    <div id="controls" class="mini-content" style="flex: 1; display: flex; flex-direction: row; text-align: center;">
+      <div style="flex: 1;">
+        <ion-icon name="shuffle"></ion-icon>
+      </div>
+      <div style="flex: 1;" (click)="previous()">
+        <ion-icon name="play-skip-back"></ion-icon>
+      </div>
+      <div style="flex: 1; position: relative;" (click)="togglePlay()">
+        <ion-icon *ngIf="playing === false" class="play" name="play"></ion-icon>
+        <ion-icon *ngIf="playing === true"class="play" name="pause"></ion-icon>
+      </div>
+      <div style="flex: 1;" (click)="next()">
+        <ion-icon name="play-skip-forward"></ion-icon>
+      </div>
+      <div style="flex: 1;" (click)="toggleLoop()">
+        <ion-icon name="repeat"></ion-icon><sup *ngIf="loop === true">1</sup>
+      </div>
+    </div>
+  </div>
+</ion-content>

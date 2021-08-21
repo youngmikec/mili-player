@@ -1,0 +1,30 @@
+
+.overlay {
+    // background: rgba(163, 163, 163, .5);
+    --background: none;
+    position: absolute;
+    background-image: url('/assets/icon/favicon.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+
+
+}
+
+ion-card{
+    --color: white;
+    --background: rgba(189, 189, 189, 0.347);
+    z-index: 200;
+    
+}
+ ion-label{
+    --color: white;
+    --z-index: 200;
+ }
